@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cátalogo Ecológico</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #edf5e9;
+    color: #263b2b;
+}
+
+header {
+    background: linear-gradient(135deg, #164e32, #5b9b54);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background: #164e32;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8f5a8;
+}
+
+section {
+    padding: 40px 6%;
+}
+
+h2 {
+    text-align: center;
+    color: #24713c;
+    margin-bottom: 25px;
+    font-size: 29px;
+}
+
+.intro {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 3px 10px #0001;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 4px 12px #0002;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.foto {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    background: #dcebd7;
+}
+
+.card h3 {
+    color: #24713c;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.etiqueta {
+    color: #24713c;
+    font-weight: bold;
+}
+
+.consejos {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 2;
+}
+
+footer {
+    background: #164e32;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌎 CATALOGO ECOLOGICO 🌿</h1>
+    <p>Integrantes del equipo: Yarensi Guerrero, Alondra Vidal, Alexander Valtierra y Missael Macias</p>
+    <p>Trabajo de Etica Profesional </p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#importancia">Importancia</a>
+    <a href="#catalogo">Especies</a>
+    <a href="#cuidados">Cuidados</a>
+    <a href="#conclusion">Conclusion</a>
+</nav>
+
+<section id="inicio">
+    <h2>Bienvenidos a nuestro catalogo</h2>
+
+    <div class="intro">
+        <p>
+        Este catalogo ecologico tiene como objetivo
+        conocer e identificar diferentes seres vivos
+        que forman parte de la Universidad Tecnologica de Aguascalientes
+        </p>
+
+        <p>
+        Presentamos diez especies entre plantas y
+        animales, describiendo sus caracteristicas y
+        la importancia que tienen para el medio ambiente.
+        </p>
+    </div>
+</section>
+
+<section id="importancia">
+    <h2>Importancia de la sostenibilidad ambiental</h2>
+
+    <div class="intro">
+        <p>
+        La sostenibilidad ambiental es fundamental
+        para conservar los recursos naturales y
+        garantizar una buena calidad de vida.
+        </p>
+
+        <p>
+        Gracias a la naturaleza obtenemos agua,
+        alimentos, oxigeno y materias primas.
+        Ademas, los ecosistemas mantienen el
+        equilibrio entre los seres vivos.
+        </p>
+
+        <p>
+        Cuidar el medio ambiente nos permite tener
+        una vida digna, saludable y segura, sin
+        comprometer los recursos de las futuras
+        generaciones.
+        </p>
+    </div>
+</section>
+
+<section id="catalogo">
+    <h2>🌱 Catalogo de especies</h2>
+
+    <div class="catalogo">
+
+        <div class="card">
+            <img src="maguey.png" alt="Maguey" class="foto">
+            <h3>1. Maguey</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Agave americana</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Planta suculenta.</p>
+            <p><span class="etiqueta">Características:</span>
+            Tiene hojas largas, gruesas y puntiagudas
+            que crecen formando una roseta.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Ayuda a conservar el suelo y sus flores
+            proporcionan alimento a murciélagos
+            y otros polinizadores.</p>
+            <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="perro.png" alt="Perro" class="foto">
+            <h3>2. Perro</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Canis lupus</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Mamifero.</p>
+            <p><span class="etiqueta">Caracteristicas:</span>
+            Es un animal doméstico, tiene cuatro patas,
+            pelaje y un sentido del olfato desarrollado.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Forma parte de la relación entre los seres
+            humanos y los animales y requiere cuidados
+            responsables.</p>
+            <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="cactus.png" alt="Cactus" class="foto">
+            <h3>3. Cactus</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Cactaceae</em></p>  
+            <p><span class="etiqueta">Tipo:</span>
+            Planta suculenta.</p>
+            <p><span class="etiqueta">Características:</span>
+            Tiene tallos gruesos que almacenan agua
+            y generalmente presenta espinas.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Está adaptado a ambientes secos y puede
+            proporcionar alimento y refugio a
+            diferentes animales.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="pino.png" alt="Pino" class="foto">
+            <h3>4. Pino</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Pinus</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Árbol.</p>
+            <p><span class="etiqueta">Características:</span>
+            Tiene hojas delgadas en forma de aguja
+            y produce conos llamados piñas.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Captura dióxido de carbono, ayuda a
+            conservar el suelo y proporciona refugio
+            a diferentes especies.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="palma.jpg" alt="Palma" class="foto">
+            <h3>5. Palma</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Coryphaea</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Planta.</p>
+            <p><span class="etiqueta">Características:</span>
+            Tiene un tronco generalmente alto y hojas
+            grandes que crecen en la parte superior.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Ofrece alimento y refugio a aves,
+            insectos y otros animales.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="mezquite.png" alt="Mezquite" class="foto">
+            <h3>6. Mezquite</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Agave americana</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Árbol.</p>
+            <p><span class="etiqueta">Características:</span>
+            Es un árbol resistente a la sequía,
+            con ramas espinosas y pequeñas hojas.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Proporciona sombra, alimento y refugio
+            a diferentes animales. También ayuda
+            a proteger el suelo.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="nopal.png" alt="Nopal" class="foto">
+            <h3>7. Nopal</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Opuntia ficus-indica</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Planta.</p>
+            <p><span class="etiqueta">Características:</span>
+            Es un cactus con tallos planos llamados
+            pencas y está adaptado a condiciones
+            de poca agua.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Proporciona alimento y refugio a
+            diferentes organismos y es importante
+            en los ecosistemas mexicanos.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="mariposa.png" alt="Mariposa" class="foto">
+            <h3>8. Mariposa</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Lepidoptera</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Insecto.</p>
+            <p><span class="etiqueta">Características:</span>
+            Tiene alas cubiertas de pequeñas escamas
+            y pasa por cuatro etapas: huevo, larva,
+            crisálida y adulto.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Participa en la polinización y forma
+            parte de las cadenas alimenticias.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="ardilla.png" alt="Ardilla" class="foto">
+            <h3>9. Ardilla</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Sciuridae</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Mamífero.</p>
+            <p><span class="etiqueta">Características:</span>
+            Es un pequeño mamífero que vive en árboles
+            y se alimenta de frutos, nueces y semillas.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Contribuye a la dispersión de semillas
+            y forma parte del equilibrio ecológico.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+        <div class="card">
+            <img src="bugambilia.png" alt="Bugambilia" class="foto">
+            <h3>10. Bugambilia</h3>
+            <p><strong>Nombre científico:</strong>
+            <em>Bougainvillea</em></p>
+            <p><span class="etiqueta">Tipo:</span>
+            Planta ornamental.</p>
+            <p><span class="etiqueta">Características:</span>
+            Es una planta trepadora que destaca
+            por sus colores llamativos y sus
+            brácteas que rodean pequeñas flores.</p>
+            <p><span class="etiqueta">Importancia:</span>
+            Sus flores pueden atraer polinizadores
+            y contribuye a la vegetación de
+            los espacios.</p>
+             <p style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;"></p>
+        </div>
+
+    </div>
+</section>
+
+<section id="cuidados">
+    <h2>¿Cómo podemos cuidar el medio ambiente?</h2>
+
+    <div class="consejos">
+        <ul>
+            <li>Evitar tirar basura en jardines y áreas verdes.</li>
+            <li>Ahorrar agua y evitar desperdiciarla.</li>
+            <li>Plantar y cuidar árboles y flores.</li>
+            <li>No dañar ni arrancar las plantas.</li>
+            <li>No maltratar a los animales.</li>
+            <li>Separar los residuos y reciclar.</li>
+            <li>Respetar los hábitats de los seres vivos.</li>
+            <li>Evitar productos que contaminen el ambiente.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="conclusion">
+    <h2>Conclusión</h2>
+
+    <div class="intro">
+        <p>
+        La biodiversidad es esencial para mantener
+        el equilibrio de nuestro planeta. Cada
+        especie cumple una función importante
+        dentro de la naturaleza.
+        </p>
+
+        <p>
+        Las plantas ayudan a producir oxígeno,
+        los árboles ofrecen refugio, los animales
+        participan en las cadenas alimenticias y
+        los insectos contribuyen a la polinización.
+        </p>
+
+        <p>
+        Por eso debemos proteger a todos los seres
+        vivos, evitar la contaminación y cuidar
+        nuestros recursos naturales.
+        </p>
+
+        <p><strong>
+        ¡Cuidar la naturaleza es cuidar nuestra vida
+        y nuestro futuro!
+        </strong></p>
+    </div>
+</section>
+
+<footer>
+    <h3>🌎 Nuestro planeta, nuestra responsabilidad 🌱</h3>
+    <p>Catálogo Ecológico | Ética Profesional</p>
+    <p>Integrantes: Yarensi Viridiana Guerrero Aguilar, Alondra Nahidelyn Vidal Silva, Angel Missael Macias Medrano y Alexander Misael Valtierra Reyes</p>
+    <p>Grupo: CNDA 4 -A - 6 </p>
+</footer>
+
+</body>
+</html>
